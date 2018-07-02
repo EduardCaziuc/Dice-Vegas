@@ -32,6 +32,9 @@
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" highlightedImage="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="dGK-zu-MP1">
                                         <rect key="frame" x="0.0" y="0.0" width="118" height="113"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" image="YES" playsSound="YES" adjustable="YES" allowsDirectInteraction="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="113" id="qdL-Dy-jzV"/>
                                             <constraint firstAttribute="width" constant="118" id="xZh-5K-EHs"/>
@@ -68,17 +71,16 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NZP-L6-zpy">
                                         <rect key="frame" x="73.5" y="99" width="172" height="64"/>
-                                        <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="3RZ-fH-ajc"/>
                                             <constraint firstAttribute="width" constant="172" id="mka-mf-Ihi"/>
                                         </constraints>
-                                        <state key="normal">
+                                        <state key="normal" backgroundImage="Flip Coin Button Background">
                                             <attributedString key="attributedTitle">
                                                 <fragment content="Roll Dice">
                                                     <attributes>
                                                         <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <font key="NSFont" size="40" name="Monaco"/>
+                                                        <font key="NSFont" size="32" name="AvenirNext-DemiBold"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
@@ -125,6 +127,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Flip Coin Button Background" width="300" height="100"/>
         <image name="dice1" width="150" height="150"/>
         <image name="diceeLogo" width="196" height="128"/>
         <image name="newbackground" width="333" height="311"/>
