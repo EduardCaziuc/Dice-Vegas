@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA06B96320EA11F2003084EF /* Roll Dice.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA06B96220EA11F2003084EF /* Roll Dice.mp3 */; };
+		EA06B96520EA124C003084EF /* DiceSoundProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA06B96420EA124C003084EF /* DiceSoundProvider.swift */; };
+		EA371F9820EA0B9200CD4147 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA371F9720EA0B9200CD4147 /* UIImageExtension.swift */; };
 		EA55B9321F9B5ED500F262C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55B9311F9B5ED500F262C7 /* AppDelegate.swift */; };
 		EA55B9341F9B5ED500F262C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55B9331F9B5ED500F262C7 /* ViewController.swift */; };
 		EA55B9371F9B5ED500F262C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA55B9351F9B5ED500F262C7 /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA06B96220EA11F2003084EF /* Roll Dice.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Roll Dice.mp3"; sourceTree = "<group>"; };
+		EA06B96420EA124C003084EF /* DiceSoundProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceSoundProvider.swift; sourceTree = "<group>"; };
+		EA371F9720EA0B9200CD4147 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
 		EA55B92E1F9B5ED500F262C7 /* Dice Vegas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dice Vegas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA55B9311F9B5ED500F262C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA55B9331F9B5ED500F262C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA06B96120EA11E4003084EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA06B96220EA11F2003084EF /* Roll Dice.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		EA55B9251F9B5ED500F262C7 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +73,9 @@
 				EA55B9311F9B5ED500F262C7 /* AppDelegate.swift */,
 				EA55B9331F9B5ED500F262C7 /* ViewController.swift */,
 				EA55B9431F9B6F5300F262C7 /* Model.swift */,
+				EA371F9720EA0B9200CD4147 /* UIImageExtension.swift */,
+				EA06B96420EA124C003084EF /* DiceSoundProvider.swift */,
+				EA06B96120EA11E4003084EF /* Resources */,
 				EA55B9351F9B5ED500F262C7 /* Main.storyboard */,
 				EA55B9381F9B5ED500F262C7 /* Assets.xcassets */,
 				EA55B93A1F9B5ED500F262C7 /* LaunchScreen.storyboard */,
@@ -94,7 +111,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Eduard Caziuc";
 				TargetAttributes = {
 					EA55B92D1F9B5ED500F262C7 = {
@@ -128,6 +145,7 @@
 			files = (
 				EA55B93C1F9B5ED500F262C7 /* LaunchScreen.storyboard in Resources */,
 				EA55B9391F9B5ED500F262C7 /* Assets.xcassets in Resources */,
+				EA06B96320EA11F2003084EF /* Roll Dice.mp3 in Resources */,
 				EA55B9371F9B5ED500F262C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +159,9 @@
 			files = (
 				EA55B9441F9B6F5300F262C7 /* Model.swift in Sources */,
 				EA55B9341F9B5ED500F262C7 /* ViewController.swift in Sources */,
+				EA06B96520EA124C003084EF /* DiceSoundProvider.swift in Sources */,
 				EA55B9321F9B5ED500F262C7 /* AppDelegate.swift in Sources */,
+				EA371F9820EA0B9200CD4147 /* UIImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +201,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -188,6 +209,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -238,6 +260,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -245,6 +268,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
