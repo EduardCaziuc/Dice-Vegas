@@ -43,14 +43,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EA06B96120EA11E4003084EF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				EA06B96220EA11F2003084EF /* Roll Dice.mp3 */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		EA55B9251F9B5ED500F262C7 = {
 			isa = PBXGroup;
 			children = (
@@ -75,7 +67,7 @@
 				EA55B9431F9B6F5300F262C7 /* Model.swift */,
 				EA371F9720EA0B9200CD4147 /* UIImageExtension.swift */,
 				EA06B96420EA124C003084EF /* DiceSoundProvider.swift */,
-				EA06B96120EA11E4003084EF /* Resources */,
+				EA06B96220EA11F2003084EF /* Roll Dice.mp3 */,
 				EA55B9351F9B5ED500F262C7 /* Main.storyboard */,
 				EA55B9381F9B5ED500F262C7 /* Assets.xcassets */,
 				EA55B93A1F9B5ED500F262C7 /* LaunchScreen.storyboard */,
@@ -116,6 +108,7 @@
 				TargetAttributes = {
 					EA55B92D1F9B5ED500F262C7 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -308,7 +301,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teamcaziuc.Dice-Vegas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -323,7 +316,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.teamcaziuc.Dice-Vegas";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -14,19 +14,18 @@ struct DiceSoundProvider {
     
     mutating func playDiceSound() {
         
-        guard let url = Bundle.main.url(forResource: "Roll Dice", withExtension: "mp3") else { return }
-        
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
             
-            diceRollSound = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            if let url = Bundle.main.path(forResource: "Roll Dice", ofType: "mp3") {
+                diceRollSound = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: url))
+            } else { print("Audio File not found") ; return }
             
-            guard let aPlayer = diceRollSound else { return }
-            aPlayer.play()
+            
+            guard let player = diceRollSound else { return }
+            player.play()
             
         } catch let error {
-            print(error.localizedDescription)
+            print("Audio file failed with an error: \(error.localizedDescription)")
         }
     }
 }
